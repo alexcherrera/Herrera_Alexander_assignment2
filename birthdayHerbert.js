@@ -84,7 +84,37 @@ console.log(ageCheck);
 //welcome();
 //agePolicy();     
 allowed();                                                                                             
+<<<<<<< HEAD
 
 //var ageCheck = agePolicy();
 //console.log(ageCheck);
 	//	var checkAllowed = allowed(
+=======
+
+//var ageCheck = agePolicy();
+//console.log(ageCheck);
+	//	var checkAllowed = allowed(
+
+var dispAnimal = function() {
+//Stating Varaibles:
+    var seeAnim;//(String)See animals
+    var animSec;//(String)Animal sections
+    var amouTime;//(String)Amount ime
+//Variable Values:
+    seeAnim = " went to the back of the store ";
+    animSec = " types of animals that were sepearted into areas ";
+    amouTime = " spent more time in some areas compared to ";
+    console.log(" When " + boyName + " got permission to go see the animals he " + seeAnim + " to see all the " + animSec + ".");
+    console.log(boyName + amouTime + " the other areas.");
+    //    return seeAnim;
+    //return animSec;
+    return amouTime;
+
+
+
+}
+
+//dispAnimal();
+var retDisAni = dispAnimal(true);
+
+>>>>>>> alexcherrera
