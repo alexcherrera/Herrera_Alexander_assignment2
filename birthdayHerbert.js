@@ -30,13 +30,13 @@ welcome();
 
 //2nd Function (Boolean)                                                                                             
     var agePolicy = function() {
-	//Stating variables:                                                                                                 
+//Stating variables:                                                                                                 
         var boyBirthAge;//How old the boy turned                                                                     
         var ageOlder;//That the boy is older than 12                                                                 
         var storedPolicy;
 
 //Variable Values:                                                                                                   
-        truePolicy = boyName + " knew the store has a policy, to buy a pet the customer has to be " + ageStart + " years old.";
+        truePolicy = boyName + " knew the store has a policy, to buy a pet the customer has to be atleast " + ageStart + " years old.";
 	ageOlder = true;
 //Display message of the age policy & comparison                                                                     
         if (ageOlder === true) {
@@ -68,7 +68,7 @@ console.log(ageCheck);
 	    mathAge = boyBirthAge - ageStart;
 	    if (mathAge === 3) {
       	    //ageStart++;
-	    ageAllowed = "Once the owner saw that " + boyName + " was older than " + ageStart + " years old he allowed" + boyName + " to look at the pets.";
+	    ageAllowed = "Once the owner saw that " + boyName + " was older than " + ageStart + " years old he allowed " + boyName + " to look at the pets.";
 	    console.log(ageAllowed);  
 	    } else {
 		
@@ -80,41 +80,56 @@ console.log(ageCheck);
 
 	};
 
-//Calling Functions
-//welcome();
-//agePolicy();     
-allowed();                                                                                             
-<<<<<<< HEAD
+allowed();                                                                                          
 
-//var ageCheck = agePolicy();
-//console.log(ageCheck);
-	//	var checkAllowed = allowed(
-=======
-
-//var ageCheck = agePolicy();
-//console.log(ageCheck);
-	//	var checkAllowed = allowed(
-
+//4th Function(Sting)
 var dispAnimal = function() {
 //Stating Varaibles:
     var seeAnim;//(String)See animals
     var animSec;//(String)Animal sections
     var amouTime;//(String)Amount ime
 //Variable Values:
-    seeAnim = " went to the back of the store ";
-    animSec = " types of animals that were sepearted into areas ";
+    seeAnim = "went to the back of the store ";
+    animSec = "types of animals that were sepearted into areas";
     amouTime = " spent more time in some areas compared to ";
-    console.log(" When " + boyName + " got permission to go see the animals he " + seeAnim + " to see all the " + animSec + ".");
-    console.log(boyName + amouTime + " the other areas.");
-    //    return seeAnim;
-    //return animSec;
+    console.log("When " + boyName + " got permission to go see the animals he " + seeAnim + " to see all the " + animSec + ".");
+    console.log( boyName + amouTime + "the other areas.");
+    return seeAnim;
+    return animSec;
     return amouTime;
+};
+dispAnimal();
 
-
-
-}
-
-//dispAnimal();
-var retDisAni = dispAnimal(true);
-
->>>>>>> alexcherrera
+//5th Function (Array) 
+var areaTimSec = function () {
+//Stating Variables:
+	var animSec;//(Array)Animal Sections
+	var secIndex;//(Number)Section Number
+	var numAnim;//(Boolean)
+	var secType;
+	var disIndex;
+//Variable Values: 
+	animSec = ["Dogs", "Cats", "Birds", "Fishes"];
+	secIndex = 0;
+	numAnim = true;
+	disIndex = 0;
+       	disIndex2 = 0;
+	animals = "";
+	for(secIndex; secIndex < animSec.length; secIndex++) {
+	    secType = animSec[secIndex];
+	
+     	if(numAnim) {
+	    if(secIndex != animSec.length-1)
+	    animals+=animSec[secIndex]+" ";
+	else
+	    animals+=animSec[secIndex];
+	}
+	
+	}
+	
+	animals="The sections of animals were "+animals+"."; 
+console.log(animals + " The pet he picked was a dog. ");
+       
+};
+			
+    areaTimSec();
