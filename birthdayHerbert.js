@@ -8,7 +8,6 @@ var rejectAge;
 var ageStart;
 //(Array)Time with each animal                                                                   
 var timeSpent;
-
 //Variable Values:                                                                               
 boyName = "Herbert";
 ageStart = 12;
@@ -23,7 +22,6 @@ var welcome = function() {
     } else {
 	console.log("Wrong Name");
     }
-
 };
 
 welcome();
@@ -34,7 +32,6 @@ welcome();
         var boyBirthAge;//How old the boy turned                                                                     
         var ageOlder;//That the boy is older than 12                                                                 
         var storedPolicy;
-
 //Variable Values:                                                                                                   
         truePolicy = boyName + " knew the store has a policy, to buy a pet the customer has to be atleast " + ageStart + " years old.";
 	ageOlder = true;
@@ -57,27 +54,21 @@ console.log(ageCheck);
 	var ageAllowed;//Statement for console.log
         var boyBirthAge;//How old the boy turned 
         var ageOlder;//That the boy is older than 12
-	var mathAge;
+	var mathAge;//The difference from the ages
 //Variable Values:
-//	ageAllowed = "Once the owner saw that " + boyName + " was older than " + ageStart + " years old";
 	boyBirthAge = 15;
         ageOlder = true;
-	//	mathAge = boyBirthAge - ageStart;
 //While Loop
         while (boyBirthAge > ageStart) {
 	    mathAge = boyBirthAge - ageStart;
 	    if (mathAge === 3) {
-      	    //ageStart++;
-	    ageAllowed = "Once the owner saw that " + boyName + " was older than " + ageStart + " years old he allowed " + boyName + " to look at the pets.";
-	    console.log(ageAllowed);  
+		ageAllowed = "Once the owner saw that " + boyName + " was older than " + ageStart + " years old he allowed " + boyName + " to look at the pets.";
+		console.log(ageAllowed);  
 	    } else {
-		
-	    // while (!boyBirthAge > ageStart) {
-	console.log("The owner said sorry " + boyName + " but you do not meet the age requirement, you have " + mathAge + " years old.");
+      	   	console.log("The owner said sorry " + boyName + " but you do not meet the age requirement, you have " + mathAge + " years old.");
 	    }
 	    return mathAge;
 	}
-
 	};
 
 allowed();                                                                                          
@@ -106,8 +97,7 @@ var areaTimSec = function () {
 	var animSec;//(Array)Animal Sections
 	var secIndex;//(Number)Section Number
 	var numAnim;//(Boolean)
-	var secType;
-	var disIndex;
+	var secType;//Section type of animals
 //Variable Values: 
 	animSec = ["Dogs", "Cats", "Birds", "Fishes"];
 	secIndex = 0;
@@ -121,9 +111,9 @@ var areaTimSec = function () {
      	if(numAnim) {
 	    if(secIndex != animSec.length-1)
 	    animals+=animSec[secIndex]+" ";
-	else
+	    else 
 	    animals+=animSec[secIndex];
-	}
+	    }
 	
 	}
 	
@@ -131,5 +121,4 @@ var areaTimSec = function () {
 console.log(animals + " The pet he picked was a dog. ");
        
 };
-			
-    areaTimSec();
+areaTimSec();
